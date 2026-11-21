@@ -15,7 +15,6 @@ int IsolationExercise::suggestedRest(const Goal& goal) const {
 }
 
 string IsolationExercise::warmupTip() const {
-    // TODO
     return "";
 }
 

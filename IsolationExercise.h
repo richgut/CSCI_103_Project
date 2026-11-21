@@ -3,7 +3,7 @@
 
 #include "Exercise.h"
 
-// Works one muscle (e.g. Bicep Curl, Leg Extension)
+// Works one muscle (e.g. Bicep Curl, Leg Extension, etc)
 class IsolationExercise : public Exercise {
 public:
     IsolationExercise(const string& name, const vector<string>& muscles);

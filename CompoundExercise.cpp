@@ -15,7 +15,6 @@ int CompoundExercise::suggestedRest(const Goal& goal) const {
 }
 
 string CompoundExercise::warmupTip() const {
-    // TODO
     return "";
 }
 

@@ -3,7 +3,7 @@
 
 #include "Exercise.h"
 
-// Works several muscles at once (e.g. Bench Press, Squat)
+// Works several muscles at once (e.g. Bench Press, Squat, etc)
 class CompoundExercise : public Exercise {
 public:
     CompoundExercise(const string& name, const vector<string>& muscles);
