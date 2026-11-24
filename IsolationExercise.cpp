@@ -1,9 +1,7 @@
 #include "IsolationExercise.h"
 #include "Goal.h"
 
-IsolationExercise::IsolationExercise(const string& name, const vector<string>& muscles)
-    : Exercise(name, muscles) {
-}
+IsolationExercise::IsolationExercise(const string& name, const vector<string>& muscles) : Exercise(name, muscles) {}
 
 string IsolationExercise::getType() const {
     return "isolation";
@@ -20,4 +18,10 @@ string IsolationExercise::warmupTip() const {
 
 void IsolationExercise::printSummary(ostream& out) const {
     // TODO: print the name, type, each set, and the total volume
+    out <<getName() <<" " <<getType();
+    vector<Set> sets = getSets();
+    for(int i = 0; i < sets.size(); i++){
+        out << "Set " << i + 1<< ": "<< sets[i]<< endl;
+    }
+    out << "Total Volume: "<< totalVolume()<< endl;
 }

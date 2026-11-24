@@ -23,6 +23,9 @@ vector<Set> Exercise::getSets() const {
 }
 
 double Exercise::totalVolume() const {
-
-    return 0.0;
+    double volume = 0;
+    for (int i = 0; i < sets.size(); i++){
+        volume += sets[i].volume();
+    }
+    return volume;
 }

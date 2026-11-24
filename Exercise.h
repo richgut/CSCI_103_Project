@@ -34,6 +34,7 @@ public:
 private:
     string name;
     vector<string> muscles;
+// a vector of set objects from out set class
     vector<Set> sets;
 };
 
